@@ -15,10 +15,10 @@ return new class extends Migration
             $table ->bigIncrements('id');
             $table ->string('name');
             $table ->string('address');
-            $table ->string('location');
-            $table ->string('city');
-            $table ->string('district');
-            $table ->string('state');
+            $table ->string('location', 25);
+            $table ->string('city', 25);
+            $table ->string('district', 25);
+            $table ->string('state', 25);
             $table ->string('latitude');
             $table ->string('longitude');
             $table->timestamps();
